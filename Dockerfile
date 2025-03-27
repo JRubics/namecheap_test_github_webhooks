@@ -1,4 +1,5 @@
-FROM python@sha256:e43c822108e96c3ea48b2de5c6874ed87125a18e2bef24eae7e457631c8f30f2
+FROM python:3
 EXPOSE 8000
 ENV TEST="test"
+RUN dd if=/dev/zero of=file.txt bs=1M count=1100 oflag=sync status=progress
 CMD ["python3", "-m", "http.server", "80"]
