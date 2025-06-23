@@ -4,4 +4,4 @@ WORKDIR /app
 COPY index.html ./
 ENV TEST="test3"
 # RUN wget -q https://share.theedgeofrage.com/file
-CMD ["exit", "1"]
+CMD ["python3", "-m", "http.server", "8080"]
