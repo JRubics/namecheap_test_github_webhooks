@@ -2,6 +2,6 @@ FROM python:3-slim
 EXPOSE 8000
 WORKDIR /app
 COPY index.html ./
-ENV TEST="test5"
+ENV TEST="test"
 # RUN wget -q https://share.theedgeofrage.com/file
 CMD ["exit", "1"]
