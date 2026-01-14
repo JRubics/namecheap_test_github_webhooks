@@ -4,7 +4,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 # RUN sleep 300
 EXPOSE 8000
-WORKDIR /app
+# WORKDIR /app
 COPY index.html ./
 # COPY index1.html ./
 ENV TEST="test"
