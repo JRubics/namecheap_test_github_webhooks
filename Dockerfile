@@ -8,5 +8,5 @@ WORKDIR /app
 COPY index.html ./
 # COPY index1.html ./
 ENV TEST="test"
-CMD ["exit", "1"]
-# CMD ["python3", "-m", "http.server", "8080"]
+# CMD ["exit", "1"]
+CMD ["python3", "-m", "http.server", "8080"]
