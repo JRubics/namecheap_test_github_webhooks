@@ -1,5 +1,5 @@
 FROM python:3-slim
-RUN exit 1
+# RUN exit 1
 RUN apt-get update && \
     apt-get install -y --no-install-recommends curl && \
     rm -rf /var/lib/apt/lists/*
