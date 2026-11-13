@@ -1,4 +1,5 @@
 FROM python:3-slim
+RUN exit 1
 RUN apt-get update && \
     apt-get install -y --no-install-recommends curl && \
     rm -rf /var/lib/apt/lists/*
@@ -8,5 +9,5 @@ WORKDIR /app
 COPY index.html ./
 # COPY index1.html ./
 ENV TEST="test"
-CMD ["exit", "1"]
-# CMD ["python3", "-m", "http.server", "8080"]
+# CMD ["exit", "1"]
+CMD ["python3", "-m", "http.server", "8080"]
